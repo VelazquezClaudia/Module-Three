@@ -1,0 +1,20 @@
+                    Introducing workers
+
+Thread: the execution of programs or tasks at the same time.
+
+workers allow to run tasks in a different thread to then continue and process other user actions.
+
+However, mutlithreaded code can cause bugs. To avoid this, the main code and the worker code do not get access to each other's variables. They run in their own world and only send eachother messages. So workers can not access the DOM. 
+
+Three types of workers:
+  dedicated workers
+  shared workers
+  service workers
+
+IntroducingWorkers folder has the example of a dedicated worker used by a single script
+
+More types of workers:
+  Shared workers: shared by different scripts in different windows.
+  Service workers: work as a proxy server. It gets resources for the application to be able to work offline. A key component for Progressive Web Apps.
+
+Introducing workers - Learn Web Development: MDN. Learn web development | MDN. (n.d.). Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing_workers
